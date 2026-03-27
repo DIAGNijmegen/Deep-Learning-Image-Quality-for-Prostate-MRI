@@ -1,4 +1,4 @@
-# T2W Quality Beta
+# Deep Learning Image Quality for Prostate MRI
 
 ## Description
 This repository provides tools for performing inference on T2-weighted (T2W) medical imaging data to assess quality or generate predictions using trained models.
@@ -81,5 +81,5 @@ high_quality_likelihood = probabilities[..., 1]  # Use ellipsis to select all di
 
 
 ## Contact
-For any inquiries or issues, please contact the repository maintainer.
+For any inquiries or issues, please contact tiago.coelho@radboudumc.nl
 

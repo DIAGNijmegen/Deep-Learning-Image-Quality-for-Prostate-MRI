@@ -1,0 +1,6 @@
+Starting... 
+2025-04-14 08:09:22.964029: Using splits from existing split file: ../DWI_IQA/data_t2w_final_final/preprocessed/Task001_ProstateQualityT2W/splits_final.pkl 
+2025-04-14 08:09:23.189168: The split file contains 5 splits. 
+2025-04-14 08:09:23.235013: Desired fold for training: 2 
+2025-04-14 08:09:23.284524: This split has 983 training and 246 validation cases. 
+2025-04-14 08:09:23.391658: unpacking dataset 

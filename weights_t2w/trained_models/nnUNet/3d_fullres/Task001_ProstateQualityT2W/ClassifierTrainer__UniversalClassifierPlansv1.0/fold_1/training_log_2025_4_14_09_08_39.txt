@@ -1,0 +1,876 @@
+Starting... 
+2025-04-14 09:08:39.315962: Creating new 5-fold cross-validation split... 
+2025-04-14 09:08:39.400009: Desired fold for training: 1 
+2025-04-14 09:08:39.401363: This split has 983 training and 246 validation cases. 
+2025-04-14 09:08:39.589490: unpacking dataset 
+2025-04-14 09:10:10.055541: done 
+2025-04-14 09:10:10.068067: TRAINING KEYS:
+ odict_keys(['ProstateQualityT2W_0001', 'ProstateQualityT2W_0002', 'ProstateQualityT2W_0003', 'ProstateQualityT2W_0006', 'ProstateQualityT2W_0007', 'ProstateQualityT2W_0010', 'ProstateQualityT2W_0011', 'ProstateQualityT2W_0012', 'ProstateQualityT2W_0013', 'ProstateQualityT2W_0014', 'ProstateQualityT2W_0017', 'ProstateQualityT2W_0018', 'ProstateQualityT2W_0019', 'ProstateQualityT2W_0020', 'ProstateQualityT2W_0021', 'ProstateQualityT2W_0022', 'ProstateQualityT2W_0024', 'ProstateQualityT2W_0025', 'ProstateQualityT2W_0026', 'ProstateQualityT2W_0028', 'ProstateQualityT2W_0029', 'ProstateQualityT2W_0030', 'ProstateQualityT2W_0031', 'ProstateQualityT2W_0032', 'ProstateQualityT2W_0033', 'ProstateQualityT2W_0034', 'ProstateQualityT2W_0035', 'ProstateQualityT2W_0037', 'ProstateQualityT2W_0038', 'ProstateQualityT2W_0039', 'ProstateQualityT2W_0040', 'ProstateQualityT2W_0041', 'ProstateQualityT2W_0042', 'ProstateQualityT2W_0043', 'ProstateQualityT2W_0044', 'ProstateQualityT2W_0045', 'ProstateQualityT2W_0046', 'ProstateQualityT2W_0047', 'ProstateQualityT2W_0048', 'ProstateQualityT2W_0049', 'ProstateQualityT2W_0050', 'ProstateQualityT2W_0051', 'ProstateQualityT2W_0052', 'ProstateQualityT2W_0053', 'ProstateQualityT2W_0056', 'ProstateQualityT2W_0057', 'ProstateQualityT2W_0058', 'ProstateQualityT2W_0059', 'ProstateQualityT2W_0060', 'ProstateQualityT2W_0063', 'ProstateQualityT2W_0065', 'ProstateQualityT2W_0066', 'ProstateQualityT2W_0067', 'ProstateQualityT2W_0069', 'ProstateQualityT2W_0070', 'ProstateQualityT2W_0071', 'ProstateQualityT2W_0072', 'ProstateQualityT2W_0073', 'ProstateQualityT2W_0074', 'ProstateQualityT2W_0075', 'ProstateQualityT2W_0077', 'ProstateQualityT2W_0078', 'ProstateQualityT2W_0079', 'ProstateQualityT2W_0080', 'ProstateQualityT2W_0081', 'ProstateQualityT2W_0082', 'ProstateQualityT2W_0083', 'ProstateQualityT2W_0084', 'ProstateQualityT2W_0085', 'ProstateQualityT2W_0086', 'ProstateQualityT2W_0087', 'ProstateQualityT2W_0088', 'ProstateQualityT2W_0089', 'ProstateQualityT2W_0090', 'ProstateQualityT2W_0092', 'ProstateQualityT2W_0093', 'ProstateQualityT2W_0094', 'ProstateQualityT2W_0095', 'ProstateQualityT2W_0097', 'ProstateQualityT2W_0098', 'ProstateQualityT2W_0099', 'ProstateQualityT2W_0100', 'ProstateQualityT2W_0101', 'ProstateQualityT2W_0102', 'ProstateQualityT2W_0103', 'ProstateQualityT2W_0104', 'ProstateQualityT2W_0105', 'ProstateQualityT2W_0106', 'ProstateQualityT2W_0108', 'ProstateQualityT2W_0109', 'ProstateQualityT2W_0111', 'ProstateQualityT2W_0112', 'ProstateQualityT2W_0113', 'ProstateQualityT2W_0114', 'ProstateQualityT2W_0115', 'ProstateQualityT2W_0117', 'ProstateQualityT2W_0119', 'ProstateQualityT2W_0121', 'ProstateQualityT2W_0122', 'ProstateQualityT2W_0123', 'ProstateQualityT2W_0126', 'ProstateQualityT2W_0127', 'ProstateQualityT2W_0130', 'ProstateQualityT2W_0132', 'ProstateQualityT2W_0133', 'ProstateQualityT2W_0137', 'ProstateQualityT2W_0138', 'ProstateQualityT2W_0139', 'ProstateQualityT2W_0140', 'ProstateQualityT2W_0141', 'ProstateQualityT2W_0142', 'ProstateQualityT2W_0143', 'ProstateQualityT2W_0144', 'ProstateQualityT2W_0146', 'ProstateQualityT2W_0148', 'ProstateQualityT2W_0150', 'ProstateQualityT2W_0151', 'ProstateQualityT2W_0152', 'ProstateQualityT2W_0153', 'ProstateQualityT2W_0154', 'ProstateQualityT2W_0155', 'ProstateQualityT2W_0156', 'ProstateQualityT2W_0158', 'ProstateQualityT2W_0160', 'ProstateQualityT2W_0161', 'ProstateQualityT2W_0162', 'ProstateQualityT2W_0163', 'ProstateQualityT2W_0166', 'ProstateQualityT2W_0167', 'ProstateQualityT2W_0169', 'ProstateQualityT2W_0170', 'ProstateQualityT2W_0171', 'ProstateQualityT2W_0172', 'ProstateQualityT2W_0173', 'ProstateQualityT2W_0174', 'ProstateQualityT2W_0175', 'ProstateQualityT2W_0177', 'ProstateQualityT2W_0178', 'ProstateQualityT2W_0179', 'ProstateQualityT2W_0180', 'ProstateQualityT2W_0181', 'ProstateQualityT2W_0183', 'ProstateQualityT2W_0185', 'ProstateQualityT2W_0186', 'ProstateQualityT2W_0188', 'ProstateQualityT2W_0190', 'ProstateQualityT2W_0191', 'ProstateQualityT2W_0192', 'ProstateQualityT2W_0193', 'ProstateQualityT2W_0194', 'ProstateQualityT2W_0195', 'ProstateQualityT2W_0196', 'ProstateQualityT2W_0199', 'ProstateQualityT2W_0201', 'ProstateQualityT2W_0202', 'ProstateQualityT2W_0203', 'ProstateQualityT2W_0206', 'ProstateQualityT2W_0207', 'ProstateQualityT2W_0209', 'ProstateQualityT2W_0210', 'ProstateQualityT2W_0211', 'ProstateQualityT2W_0212', 'ProstateQualityT2W_0213', 'ProstateQualityT2W_0214', 'ProstateQualityT2W_0215', 'ProstateQualityT2W_0217', 'ProstateQualityT2W_0218', 'ProstateQualityT2W_0219', 'ProstateQualityT2W_0220', 'ProstateQualityT2W_0222', 'ProstateQualityT2W_0224', 'ProstateQualityT2W_0225', 'ProstateQualityT2W_0226', 'ProstateQualityT2W_0227', 'ProstateQualityT2W_0228', 'ProstateQualityT2W_0229', 'ProstateQualityT2W_0230', 'ProstateQualityT2W_0231', 'ProstateQualityT2W_0232', 'ProstateQualityT2W_0233', 'ProstateQualityT2W_0234', 'ProstateQualityT2W_0235', 'ProstateQualityT2W_0236', 'ProstateQualityT2W_0238', 'ProstateQualityT2W_0239', 'ProstateQualityT2W_0240', 'ProstateQualityT2W_0241', 'ProstateQualityT2W_0243', 'ProstateQualityT2W_0247', 'ProstateQualityT2W_0248', 'ProstateQualityT2W_0249', 'ProstateQualityT2W_0250', 'ProstateQualityT2W_0251', 'ProstateQualityT2W_0252', 'ProstateQualityT2W_0253', 'ProstateQualityT2W_0254', 'ProstateQualityT2W_0255', 'ProstateQualityT2W_0256', 'ProstateQualityT2W_0258', 'ProstateQualityT2W_0259', 'ProstateQualityT2W_0260', 'ProstateQualityT2W_0261', 'ProstateQualityT2W_0262', 'ProstateQualityT2W_0264', 'ProstateQualityT2W_0265', 'ProstateQualityT2W_0266', 'ProstateQualityT2W_0268', 'ProstateQualityT2W_0270', 'ProstateQualityT2W_0271', 'ProstateQualityT2W_0272', 'ProstateQualityT2W_0273', 'ProstateQualityT2W_0274', 'ProstateQualityT2W_0275', 'ProstateQualityT2W_0276', 'ProstateQualityT2W_0277', 'ProstateQualityT2W_0278', 'ProstateQualityT2W_0279', 'ProstateQualityT2W_0280', 'ProstateQualityT2W_0282', 'ProstateQualityT2W_0283', 'ProstateQualityT2W_0284', 'ProstateQualityT2W_0285', 'ProstateQualityT2W_0286', 'ProstateQualityT2W_0287', 'ProstateQualityT2W_0288', 'ProstateQualityT2W_0289', 'ProstateQualityT2W_0290', 'ProstateQualityT2W_0291', 'ProstateQualityT2W_0292', 'ProstateQualityT2W_0293', 'ProstateQualityT2W_0294', 'ProstateQualityT2W_0295', 'ProstateQualityT2W_0296', 'ProstateQualityT2W_0298', 'ProstateQualityT2W_0299', 'ProstateQualityT2W_0300', 'ProstateQualityT2W_0302', 'ProstateQualityT2W_0303', 'ProstateQualityT2W_0304', 'ProstateQualityT2W_0306', 'ProstateQualityT2W_0307', 'ProstateQualityT2W_0308', 'ProstateQualityT2W_0309', 'ProstateQualityT2W_0311', 'ProstateQualityT2W_0312', 'ProstateQualityT2W_0313', 'ProstateQualityT2W_0314', 'ProstateQualityT2W_0316', 'ProstateQualityT2W_0317', 'ProstateQualityT2W_0318', 'ProstateQualityT2W_0319', 'ProstateQualityT2W_0320', 'ProstateQualityT2W_0322', 'ProstateQualityT2W_0324', 'ProstateQualityT2W_0325', 'ProstateQualityT2W_0326', 'ProstateQualityT2W_0327', 'ProstateQualityT2W_0329', 'ProstateQualityT2W_0330', 'ProstateQualityT2W_0331', 'ProstateQualityT2W_0332', 'ProstateQualityT2W_0334', 'ProstateQualityT2W_0335', 'ProstateQualityT2W_0337', 'ProstateQualityT2W_0338', 'ProstateQualityT2W_0339', 'ProstateQualityT2W_0340', 'ProstateQualityT2W_0341', 'ProstateQualityT2W_0342', 'ProstateQualityT2W_0343', 'ProstateQualityT2W_0345', 'ProstateQualityT2W_0346', 'ProstateQualityT2W_0348', 'ProstateQualityT2W_0349', 'ProstateQualityT2W_0350', 'ProstateQualityT2W_0351', 'ProstateQualityT2W_0352', 'ProstateQualityT2W_0354', 'ProstateQualityT2W_0355', 'ProstateQualityT2W_0356', 'ProstateQualityT2W_0357', 'ProstateQualityT2W_0358', 'ProstateQualityT2W_0359', 'ProstateQualityT2W_0360', 'ProstateQualityT2W_0361', 'ProstateQualityT2W_0363', 'ProstateQualityT2W_0364', 'ProstateQualityT2W_0365', 'ProstateQualityT2W_0366', 'ProstateQualityT2W_0368', 'ProstateQualityT2W_0369', 'ProstateQualityT2W_0371', 'ProstateQualityT2W_0372', 'ProstateQualityT2W_0373', 'ProstateQualityT2W_0374', 'ProstateQualityT2W_0375', 'ProstateQualityT2W_0376', 'ProstateQualityT2W_0377', 'ProstateQualityT2W_0378', 'ProstateQualityT2W_0379', 'ProstateQualityT2W_0380', 'ProstateQualityT2W_0383', 'ProstateQualityT2W_0385', 'ProstateQualityT2W_0386', 'ProstateQualityT2W_0388', 'ProstateQualityT2W_0390', 'ProstateQualityT2W_0391', 'ProstateQualityT2W_0394', 'ProstateQualityT2W_0395', 'ProstateQualityT2W_0396', 'ProstateQualityT2W_0397', 'ProstateQualityT2W_0398', 'ProstateQualityT2W_0399', 'ProstateQualityT2W_0400', 'ProstateQualityT2W_0402', 'ProstateQualityT2W_0403', 'ProstateQualityT2W_0404', 'ProstateQualityT2W_0406', 'ProstateQualityT2W_0407', 'ProstateQualityT2W_0410', 'ProstateQualityT2W_0411', 'ProstateQualityT2W_0412', 'ProstateQualityT2W_0413', 'ProstateQualityT2W_0414', 'ProstateQualityT2W_0415', 'ProstateQualityT2W_0416', 'ProstateQualityT2W_0418', 'ProstateQualityT2W_0419', 'ProstateQualityT2W_0422', 'ProstateQualityT2W_0424', 'ProstateQualityT2W_0426', 'ProstateQualityT2W_0428', 'ProstateQualityT2W_0429', 'ProstateQualityT2W_0430', 'ProstateQualityT2W_0431', 'ProstateQualityT2W_0432', 'ProstateQualityT2W_0433', 'ProstateQualityT2W_0434', 'ProstateQualityT2W_0436', 'ProstateQualityT2W_0439', 'ProstateQualityT2W_0440', 'ProstateQualityT2W_0441', 'ProstateQualityT2W_0442', 'ProstateQualityT2W_0443', 'ProstateQualityT2W_0444', 'ProstateQualityT2W_0445', 'ProstateQualityT2W_0446', 'ProstateQualityT2W_0447', 'ProstateQualityT2W_0448', 'ProstateQualityT2W_0449', 'ProstateQualityT2W_0451', 'ProstateQualityT2W_0452', 'ProstateQualityT2W_0455', 'ProstateQualityT2W_0456', 'ProstateQualityT2W_0457', 'ProstateQualityT2W_0458', 'ProstateQualityT2W_0459', 'ProstateQualityT2W_0460', 'ProstateQualityT2W_0461', 'ProstateQualityT2W_0462', 'ProstateQualityT2W_0464', 'ProstateQualityT2W_0465', 'ProstateQualityT2W_0468', 'ProstateQualityT2W_0470', 'ProstateQualityT2W_0471', 'ProstateQualityT2W_0472', 'ProstateQualityT2W_0473', 'ProstateQualityT2W_0474', 'ProstateQualityT2W_0475', 'ProstateQualityT2W_0476', 'ProstateQualityT2W_0477', 'ProstateQualityT2W_0478', 'ProstateQualityT2W_0479', 'ProstateQualityT2W_0480', 'ProstateQualityT2W_0481', 'ProstateQualityT2W_0482', 'ProstateQualityT2W_0483', 'ProstateQualityT2W_0484', 'ProstateQualityT2W_0485', 'ProstateQualityT2W_0486', 'ProstateQualityT2W_0487', 'ProstateQualityT2W_0488', 'ProstateQualityT2W_0489', 'ProstateQualityT2W_0491', 'ProstateQualityT2W_0492', 'ProstateQualityT2W_0493', 'ProstateQualityT2W_0494', 'ProstateQualityT2W_0495', 'ProstateQualityT2W_0496', 'ProstateQualityT2W_0497', 'ProstateQualityT2W_0498', 'ProstateQualityT2W_0499', 'ProstateQualityT2W_0500', 'ProstateQualityT2W_0501', 'ProstateQualityT2W_0504', 'ProstateQualityT2W_0505', 'ProstateQualityT2W_0506', 'ProstateQualityT2W_0507', 'ProstateQualityT2W_0508', 'ProstateQualityT2W_0509', 'ProstateQualityT2W_0510', 'ProstateQualityT2W_0511', 'ProstateQualityT2W_0513', 'ProstateQualityT2W_0514', 'ProstateQualityT2W_0515', 'ProstateQualityT2W_0516', 'ProstateQualityT2W_0517', 'ProstateQualityT2W_0518', 'ProstateQualityT2W_0519', 'ProstateQualityT2W_0520', 'ProstateQualityT2W_0521', 'ProstateQualityT2W_0523', 'ProstateQualityT2W_0524', 'ProstateQualityT2W_0525', 'ProstateQualityT2W_0526', 'ProstateQualityT2W_0528', 'ProstateQualityT2W_0530', 'ProstateQualityT2W_0532', 'ProstateQualityT2W_0533', 'ProstateQualityT2W_0534', 'ProstateQualityT2W_0535', 'ProstateQualityT2W_0536', 'ProstateQualityT2W_0538', 'ProstateQualityT2W_0539', 'ProstateQualityT2W_0540', 'ProstateQualityT2W_0542', 'ProstateQualityT2W_0543', 'ProstateQualityT2W_0544', 'ProstateQualityT2W_0545', 'ProstateQualityT2W_0547', 'ProstateQualityT2W_0549', 'ProstateQualityT2W_0551', 'ProstateQualityT2W_0552', 'ProstateQualityT2W_0553', 'ProstateQualityT2W_0554', 'ProstateQualityT2W_0555', 'ProstateQualityT2W_0556', 'ProstateQualityT2W_0557', 'ProstateQualityT2W_0558', 'ProstateQualityT2W_0559', 'ProstateQualityT2W_0560', 'ProstateQualityT2W_0561', 'ProstateQualityT2W_0562', 'ProstateQualityT2W_0563', 'ProstateQualityT2W_0564', 'ProstateQualityT2W_0565', 'ProstateQualityT2W_0567', 'ProstateQualityT2W_0569', 'ProstateQualityT2W_0570', 'ProstateQualityT2W_0571', 'ProstateQualityT2W_0572', 'ProstateQualityT2W_0573', 'ProstateQualityT2W_0574', 'ProstateQualityT2W_0575', 'ProstateQualityT2W_0576', 'ProstateQualityT2W_0577', 'ProstateQualityT2W_0578', 'ProstateQualityT2W_0579', 'ProstateQualityT2W_0580', 'ProstateQualityT2W_0581', 'ProstateQualityT2W_0582', 'ProstateQualityT2W_0583', 'ProstateQualityT2W_0584', 'ProstateQualityT2W_0585', 'ProstateQualityT2W_0586', 'ProstateQualityT2W_0587', 'ProstateQualityT2W_0588', 'ProstateQualityT2W_0589', 'ProstateQualityT2W_0591', 'ProstateQualityT2W_0593', 'ProstateQualityT2W_0595', 'ProstateQualityT2W_0596', 'ProstateQualityT2W_0598', 'ProstateQualityT2W_0600', 'ProstateQualityT2W_0601', 'ProstateQualityT2W_0602', 'ProstateQualityT2W_0603', 'ProstateQualityT2W_0605', 'ProstateQualityT2W_0606', 'ProstateQualityT2W_0607', 'ProstateQualityT2W_0608', 'ProstateQualityT2W_0609', 'ProstateQualityT2W_0610', 'ProstateQualityT2W_0611', 'ProstateQualityT2W_0612', 'ProstateQualityT2W_0614', 'ProstateQualityT2W_0615', 'ProstateQualityT2W_0616', 'ProstateQualityT2W_0617', 'ProstateQualityT2W_0618', 'ProstateQualityT2W_0619', 'ProstateQualityT2W_0620', 'ProstateQualityT2W_0621', 'ProstateQualityT2W_0622', 'ProstateQualityT2W_0623', 'ProstateQualityT2W_0624', 'ProstateQualityT2W_0626', 'ProstateQualityT2W_0627', 'ProstateQualityT2W_0628', 'ProstateQualityT2W_0629', 'ProstateQualityT2W_0631', 'ProstateQualityT2W_0632', 'ProstateQualityT2W_0633', 'ProstateQualityT2W_0634', 'ProstateQualityT2W_0636', 'ProstateQualityT2W_0637', 'ProstateQualityT2W_0639', 'ProstateQualityT2W_0640', 'ProstateQualityT2W_0641', 'ProstateQualityT2W_0644', 'ProstateQualityT2W_0645', 'ProstateQualityT2W_0646', 'ProstateQualityT2W_0647', 'ProstateQualityT2W_0649', 'ProstateQualityT2W_0650', 'ProstateQualityT2W_0652', 'ProstateQualityT2W_0653', 'ProstateQualityT2W_0654', 'ProstateQualityT2W_0655', 'ProstateQualityT2W_0658', 'ProstateQualityT2W_0659', 'ProstateQualityT2W_0661', 'ProstateQualityT2W_0662', 'ProstateQualityT2W_0663', 'ProstateQualityT2W_0664', 'ProstateQualityT2W_0665', 'ProstateQualityT2W_0667', 'ProstateQualityT2W_0669', 'ProstateQualityT2W_0670', 'ProstateQualityT2W_0671', 'ProstateQualityT2W_0672', 'ProstateQualityT2W_0674', 'ProstateQualityT2W_0675', 'ProstateQualityT2W_0676', 'ProstateQualityT2W_0677', 'ProstateQualityT2W_0678', 'ProstateQualityT2W_0679', 'ProstateQualityT2W_0680', 'ProstateQualityT2W_0681', 'ProstateQualityT2W_0682', 'ProstateQualityT2W_0683', 'ProstateQualityT2W_0684', 'ProstateQualityT2W_0685', 'ProstateQualityT2W_0687', 'ProstateQualityT2W_0688', 'ProstateQualityT2W_0689', 'ProstateQualityT2W_0691', 'ProstateQualityT2W_0692', 'ProstateQualityT2W_0693', 'ProstateQualityT2W_0694', 'ProstateQualityT2W_0695', 'ProstateQualityT2W_0696', 'ProstateQualityT2W_0697', 'ProstateQualityT2W_0698', 'ProstateQualityT2W_0699', 'ProstateQualityT2W_0700', 'ProstateQualityT2W_0702', 'ProstateQualityT2W_0703', 'ProstateQualityT2W_0704', 'ProstateQualityT2W_0705', 'ProstateQualityT2W_0706', 'ProstateQualityT2W_0707', 'ProstateQualityT2W_0710', 'ProstateQualityT2W_0711', 'ProstateQualityT2W_0712', 'ProstateQualityT2W_0713', 'ProstateQualityT2W_0714', 'ProstateQualityT2W_0715', 'ProstateQualityT2W_0717', 'ProstateQualityT2W_0718', 'ProstateQualityT2W_0719', 'ProstateQualityT2W_0720', 'ProstateQualityT2W_0721', 'ProstateQualityT2W_0722', 'ProstateQualityT2W_0723', 'ProstateQualityT2W_0724', 'ProstateQualityT2W_0725', 'ProstateQualityT2W_0726', 'ProstateQualityT2W_0728', 'ProstateQualityT2W_0730', 'ProstateQualityT2W_0732', 'ProstateQualityT2W_0733', 'ProstateQualityT2W_0734', 'ProstateQualityT2W_0736', 'ProstateQualityT2W_0738', 'ProstateQualityT2W_0739', 'ProstateQualityT2W_0740', 'ProstateQualityT2W_0742', 'ProstateQualityT2W_0743', 'ProstateQualityT2W_0744', 'ProstateQualityT2W_0745', 'ProstateQualityT2W_0746', 'ProstateQualityT2W_0747', 'ProstateQualityT2W_0748', 'ProstateQualityT2W_0749', 'ProstateQualityT2W_0750', 'ProstateQualityT2W_0751', 'ProstateQualityT2W_0752', 'ProstateQualityT2W_0753', 'ProstateQualityT2W_0754', 'ProstateQualityT2W_0755', 'ProstateQualityT2W_0756', 'ProstateQualityT2W_0758', 'ProstateQualityT2W_0759', 'ProstateQualityT2W_0760', 'ProstateQualityT2W_0761', 'ProstateQualityT2W_0762', 'ProstateQualityT2W_0763', 'ProstateQualityT2W_0764', 'ProstateQualityT2W_0765', 'ProstateQualityT2W_0767', 'ProstateQualityT2W_0770', 'ProstateQualityT2W_0771', 'ProstateQualityT2W_0772', 'ProstateQualityT2W_0773', 'ProstateQualityT2W_0774', 'ProstateQualityT2W_0775', 'ProstateQualityT2W_0776', 'ProstateQualityT2W_0778', 'ProstateQualityT2W_0779', 'ProstateQualityT2W_0780', 'ProstateQualityT2W_0781', 'ProstateQualityT2W_0782', 'ProstateQualityT2W_0783', 'ProstateQualityT2W_0784', 'ProstateQualityT2W_0787', 'ProstateQualityT2W_0789', 'ProstateQualityT2W_0790', 'ProstateQualityT2W_0791', 'ProstateQualityT2W_0792', 'ProstateQualityT2W_0794', 'ProstateQualityT2W_0795', 'ProstateQualityT2W_0798', 'ProstateQualityT2W_0799', 'ProstateQualityT2W_0801', 'ProstateQualityT2W_0802', 'ProstateQualityT2W_0803', 'ProstateQualityT2W_0804', 'ProstateQualityT2W_0805', 'ProstateQualityT2W_0806', 'ProstateQualityT2W_0807', 'ProstateQualityT2W_0808', 'ProstateQualityT2W_0809', 'ProstateQualityT2W_0810', 'ProstateQualityT2W_0813', 'ProstateQualityT2W_0814', 'ProstateQualityT2W_0815', 'ProstateQualityT2W_0816', 'ProstateQualityT2W_0819', 'ProstateQualityT2W_0821', 'ProstateQualityT2W_0823', 'ProstateQualityT2W_0825', 'ProstateQualityT2W_0826', 'ProstateQualityT2W_0827', 'ProstateQualityT2W_0828', 'ProstateQualityT2W_0829', 'ProstateQualityT2W_0830', 'ProstateQualityT2W_0832', 'ProstateQualityT2W_0833', 'ProstateQualityT2W_0835', 'ProstateQualityT2W_0836', 'ProstateQualityT2W_0837', 'ProstateQualityT2W_0838', 'ProstateQualityT2W_0839', 'ProstateQualityT2W_0840', 'ProstateQualityT2W_0843', 'ProstateQualityT2W_0844', 'ProstateQualityT2W_0845', 'ProstateQualityT2W_0846', 'ProstateQualityT2W_0848', 'ProstateQualityT2W_0849', 'ProstateQualityT2W_0850', 'ProstateQualityT2W_0851', 'ProstateQualityT2W_0852', 'ProstateQualityT2W_0855', 'ProstateQualityT2W_0856', 'ProstateQualityT2W_0857', 'ProstateQualityT2W_0858', 'ProstateQualityT2W_0859', 'ProstateQualityT2W_0860', 'ProstateQualityT2W_0862', 'ProstateQualityT2W_0863', 'ProstateQualityT2W_0864', 'ProstateQualityT2W_0865', 'ProstateQualityT2W_0866', 'ProstateQualityT2W_0868', 'ProstateQualityT2W_0869', 'ProstateQualityT2W_0870', 'ProstateQualityT2W_0871', 'ProstateQualityT2W_0872', 'ProstateQualityT2W_0873', 'ProstateQualityT2W_0874', 'ProstateQualityT2W_0875', 'ProstateQualityT2W_0876', 'ProstateQualityT2W_0877', 'ProstateQualityT2W_0878', 'ProstateQualityT2W_0881', 'ProstateQualityT2W_0882', 'ProstateQualityT2W_0883', 'ProstateQualityT2W_0884', 'ProstateQualityT2W_0885', 'ProstateQualityT2W_0886', 'ProstateQualityT2W_0887', 'ProstateQualityT2W_0889', 'ProstateQualityT2W_0890', 'ProstateQualityT2W_0891', 'ProstateQualityT2W_0892', 'ProstateQualityT2W_0893', 'ProstateQualityT2W_0894', 'ProstateQualityT2W_0895', 'ProstateQualityT2W_0898', 'ProstateQualityT2W_0899', 'ProstateQualityT2W_0900', 'ProstateQualityT2W_0901', 'ProstateQualityT2W_0902', 'ProstateQualityT2W_0903', 'ProstateQualityT2W_0904', 'ProstateQualityT2W_0905', 'ProstateQualityT2W_0907', 'ProstateQualityT2W_0908', 'ProstateQualityT2W_0909', 'ProstateQualityT2W_0910', 'ProstateQualityT2W_0911', 'ProstateQualityT2W_0912', 'ProstateQualityT2W_0913', 'ProstateQualityT2W_0914', 'ProstateQualityT2W_0915', 'ProstateQualityT2W_0917', 'ProstateQualityT2W_0918', 'ProstateQualityT2W_0919', 'ProstateQualityT2W_0921', 'ProstateQualityT2W_0923', 'ProstateQualityT2W_0924', 'ProstateQualityT2W_0925', 'ProstateQualityT2W_0926', 'ProstateQualityT2W_0927', 'ProstateQualityT2W_0929', 'ProstateQualityT2W_0932', 'ProstateQualityT2W_0933', 'ProstateQualityT2W_0934', 'ProstateQualityT2W_0937', 'ProstateQualityT2W_0938', 'ProstateQualityT2W_0939', 'ProstateQualityT2W_0942', 'ProstateQualityT2W_0943', 'ProstateQualityT2W_0944', 'ProstateQualityT2W_0945', 'ProstateQualityT2W_0946', 'ProstateQualityT2W_0947', 'ProstateQualityT2W_0948', 'ProstateQualityT2W_0949', 'ProstateQualityT2W_0950', 'ProstateQualityT2W_0951', 'ProstateQualityT2W_0953', 'ProstateQualityT2W_0954', 'ProstateQualityT2W_0955', 'ProstateQualityT2W_0957', 'ProstateQualityT2W_0958', 'ProstateQualityT2W_0959', 'ProstateQualityT2W_0960', 'ProstateQualityT2W_0961', 'ProstateQualityT2W_0963', 'ProstateQualityT2W_0964', 'ProstateQualityT2W_0965', 'ProstateQualityT2W_0966', 'ProstateQualityT2W_0968', 'ProstateQualityT2W_0969', 'ProstateQualityT2W_0970', 'ProstateQualityT2W_0971', 'ProstateQualityT2W_0973', 'ProstateQualityT2W_0974', 'ProstateQualityT2W_0975', 'ProstateQualityT2W_0976', 'ProstateQualityT2W_0978', 'ProstateQualityT2W_0979', 'ProstateQualityT2W_0980', 'ProstateQualityT2W_0981', 'ProstateQualityT2W_0982', 'ProstateQualityT2W_0983', 'ProstateQualityT2W_0984', 'ProstateQualityT2W_0986', 'ProstateQualityT2W_0988', 'ProstateQualityT2W_0989', 'ProstateQualityT2W_0990', 'ProstateQualityT2W_0992', 'ProstateQualityT2W_0993', 'ProstateQualityT2W_0994', 'ProstateQualityT2W_0995', 'ProstateQualityT2W_0996', 'ProstateQualityT2W_0997', 'ProstateQualityT2W_0998', 'ProstateQualityT2W_0999', 'ProstateQualityT2W_1000', 'ProstateQualityT2W_1001', 'ProstateQualityT2W_1002', 'ProstateQualityT2W_1004', 'ProstateQualityT2W_1005', 'ProstateQualityT2W_1006', 'ProstateQualityT2W_1007', 'ProstateQualityT2W_1008', 'ProstateQualityT2W_1009', 'ProstateQualityT2W_1010', 'ProstateQualityT2W_1011', 'ProstateQualityT2W_1012', 'ProstateQualityT2W_1013', 'ProstateQualityT2W_1014', 'ProstateQualityT2W_1015', 'ProstateQualityT2W_1016', 'ProstateQualityT2W_1017', 'ProstateQualityT2W_1018', 'ProstateQualityT2W_1019', 'ProstateQualityT2W_1020', 'ProstateQualityT2W_1021', 'ProstateQualityT2W_1022', 'ProstateQualityT2W_1023', 'ProstateQualityT2W_1024', 'ProstateQualityT2W_1025', 'ProstateQualityT2W_1026', 'ProstateQualityT2W_1027', 'ProstateQualityT2W_1028', 'ProstateQualityT2W_1029', 'ProstateQualityT2W_1030', 'ProstateQualityT2W_1031', 'ProstateQualityT2W_1032', 'ProstateQualityT2W_1033', 'ProstateQualityT2W_1034', 'ProstateQualityT2W_1035', 'ProstateQualityT2W_1037', 'ProstateQualityT2W_1038', 'ProstateQualityT2W_1039', 'ProstateQualityT2W_1040', 'ProstateQualityT2W_1042', 'ProstateQualityT2W_1043', 'ProstateQualityT2W_1044', 'ProstateQualityT2W_1045', 'ProstateQualityT2W_1046', 'ProstateQualityT2W_1049', 'ProstateQualityT2W_1050', 'ProstateQualityT2W_1051', 'ProstateQualityT2W_1053', 'ProstateQualityT2W_1054', 'ProstateQualityT2W_1055', 'ProstateQualityT2W_1056', 'ProstateQualityT2W_1057', 'ProstateQualityT2W_1059', 'ProstateQualityT2W_1060', 'ProstateQualityT2W_1061', 'ProstateQualityT2W_1062', 'ProstateQualityT2W_1063', 'ProstateQualityT2W_1065', 'ProstateQualityT2W_1066', 'ProstateQualityT2W_1067', 'ProstateQualityT2W_1068', 'ProstateQualityT2W_1069', 'ProstateQualityT2W_1070', 'ProstateQualityT2W_1071', 'ProstateQualityT2W_1073', 'ProstateQualityT2W_1074', 'ProstateQualityT2W_1075', 'ProstateQualityT2W_1076', 'ProstateQualityT2W_1078', 'ProstateQualityT2W_1079', 'ProstateQualityT2W_1080', 'ProstateQualityT2W_1081', 'ProstateQualityT2W_1082', 'ProstateQualityT2W_1083', 'ProstateQualityT2W_1084', 'ProstateQualityT2W_1085', 'ProstateQualityT2W_1086', 'ProstateQualityT2W_1088', 'ProstateQualityT2W_1089', 'ProstateQualityT2W_1090', 'ProstateQualityT2W_1091', 'ProstateQualityT2W_1093', 'ProstateQualityT2W_1094', 'ProstateQualityT2W_1095', 'ProstateQualityT2W_1096', 'ProstateQualityT2W_1097', 'ProstateQualityT2W_1098', 'ProstateQualityT2W_1099', 'ProstateQualityT2W_1100', 'ProstateQualityT2W_1101', 'ProstateQualityT2W_1102', 'ProstateQualityT2W_1104', 'ProstateQualityT2W_1105', 'ProstateQualityT2W_1106', 'ProstateQualityT2W_1107', 'ProstateQualityT2W_1108', 'ProstateQualityT2W_1109', 'ProstateQualityT2W_1110', 'ProstateQualityT2W_1111', 'ProstateQualityT2W_1112', 'ProstateQualityT2W_1113', 'ProstateQualityT2W_1114', 'ProstateQualityT2W_1115', 'ProstateQualityT2W_1116', 'ProstateQualityT2W_1117', 'ProstateQualityT2W_1118', 'ProstateQualityT2W_1119', 'ProstateQualityT2W_1121', 'ProstateQualityT2W_1123', 'ProstateQualityT2W_1124', 'ProstateQualityT2W_1125', 'ProstateQualityT2W_1126', 'ProstateQualityT2W_1127', 'ProstateQualityT2W_1129', 'ProstateQualityT2W_1130', 'ProstateQualityT2W_1131', 'ProstateQualityT2W_1132', 'ProstateQualityT2W_1133', 'ProstateQualityT2W_1136', 'ProstateQualityT2W_1138', 'ProstateQualityT2W_1142', 'ProstateQualityT2W_1143', 'ProstateQualityT2W_1144', 'ProstateQualityT2W_1147', 'ProstateQualityT2W_1149', 'ProstateQualityT2W_1151', 'ProstateQualityT2W_1152', 'ProstateQualityT2W_1153', 'ProstateQualityT2W_1154', 'ProstateQualityT2W_1155', 'ProstateQualityT2W_1156', 'ProstateQualityT2W_1158', 'ProstateQualityT2W_1159', 'ProstateQualityT2W_1160', 'ProstateQualityT2W_1161', 'ProstateQualityT2W_1162', 'ProstateQualityT2W_1163', 'ProstateQualityT2W_1164', 'ProstateQualityT2W_1165', 'ProstateQualityT2W_1166', 'ProstateQualityT2W_1167', 'ProstateQualityT2W_1168', 'ProstateQualityT2W_1169', 'ProstateQualityT2W_1170', 'ProstateQualityT2W_1171', 'ProstateQualityT2W_1173', 'ProstateQualityT2W_1174', 'ProstateQualityT2W_1175', 'ProstateQualityT2W_1176', 'ProstateQualityT2W_1177', 'ProstateQualityT2W_1178', 'ProstateQualityT2W_1179', 'ProstateQualityT2W_1180', 'ProstateQualityT2W_1181', 'ProstateQualityT2W_1182', 'ProstateQualityT2W_1183', 'ProstateQualityT2W_1184', 'ProstateQualityT2W_1185', 'ProstateQualityT2W_1186', 'ProstateQualityT2W_1189', 'ProstateQualityT2W_1190', 'ProstateQualityT2W_1192', 'ProstateQualityT2W_1194', 'ProstateQualityT2W_1195', 'ProstateQualityT2W_1197', 'ProstateQualityT2W_1199', 'ProstateQualityT2W_1200', 'ProstateQualityT2W_1201', 'ProstateQualityT2W_1202', 'ProstateQualityT2W_1203', 'ProstateQualityT2W_1204', 'ProstateQualityT2W_1205', 'ProstateQualityT2W_1206', 'ProstateQualityT2W_1208', 'ProstateQualityT2W_1210', 'ProstateQualityT2W_1212', 'ProstateQualityT2W_1213', 'ProstateQualityT2W_1214', 'ProstateQualityT2W_1215', 'ProstateQualityT2W_1216', 'ProstateQualityT2W_1217', 'ProstateQualityT2W_1218', 'ProstateQualityT2W_1219', 'ProstateQualityT2W_1222', 'ProstateQualityT2W_1223', 'ProstateQualityT2W_1224', 'ProstateQualityT2W_1225', 'ProstateQualityT2W_1226', 'ProstateQualityT2W_1227', 'ProstateQualityT2W_1228', 'ProstateQualityT2W_1229']) 
+2025-04-14 09:10:10.069853: VALIDATION KEYS:
+ odict_keys(['ProstateQualityT2W_0004', 'ProstateQualityT2W_0005', 'ProstateQualityT2W_0008', 'ProstateQualityT2W_0009', 'ProstateQualityT2W_0015', 'ProstateQualityT2W_0016', 'ProstateQualityT2W_0023', 'ProstateQualityT2W_0027', 'ProstateQualityT2W_0036', 'ProstateQualityT2W_0054', 'ProstateQualityT2W_0055', 'ProstateQualityT2W_0061', 'ProstateQualityT2W_0062', 'ProstateQualityT2W_0064', 'ProstateQualityT2W_0068', 'ProstateQualityT2W_0076', 'ProstateQualityT2W_0091', 'ProstateQualityT2W_0096', 'ProstateQualityT2W_0107', 'ProstateQualityT2W_0110', 'ProstateQualityT2W_0116', 'ProstateQualityT2W_0118', 'ProstateQualityT2W_0120', 'ProstateQualityT2W_0124', 'ProstateQualityT2W_0125', 'ProstateQualityT2W_0128', 'ProstateQualityT2W_0129', 'ProstateQualityT2W_0131', 'ProstateQualityT2W_0134', 'ProstateQualityT2W_0135', 'ProstateQualityT2W_0136', 'ProstateQualityT2W_0145', 'ProstateQualityT2W_0147', 'ProstateQualityT2W_0149', 'ProstateQualityT2W_0157', 'ProstateQualityT2W_0159', 'ProstateQualityT2W_0164', 'ProstateQualityT2W_0165', 'ProstateQualityT2W_0168', 'ProstateQualityT2W_0176', 'ProstateQualityT2W_0182', 'ProstateQualityT2W_0184', 'ProstateQualityT2W_0187', 'ProstateQualityT2W_0189', 'ProstateQualityT2W_0197', 'ProstateQualityT2W_0198', 'ProstateQualityT2W_0200', 'ProstateQualityT2W_0204', 'ProstateQualityT2W_0205', 'ProstateQualityT2W_0208', 'ProstateQualityT2W_0216', 'ProstateQualityT2W_0221', 'ProstateQualityT2W_0223', 'ProstateQualityT2W_0237', 'ProstateQualityT2W_0242', 'ProstateQualityT2W_0244', 'ProstateQualityT2W_0245', 'ProstateQualityT2W_0246', 'ProstateQualityT2W_0257', 'ProstateQualityT2W_0263', 'ProstateQualityT2W_0267', 'ProstateQualityT2W_0269', 'ProstateQualityT2W_0281', 'ProstateQualityT2W_0297', 'ProstateQualityT2W_0301', 'ProstateQualityT2W_0305', 'ProstateQualityT2W_0310', 'ProstateQualityT2W_0315', 'ProstateQualityT2W_0321', 'ProstateQualityT2W_0323', 'ProstateQualityT2W_0328', 'ProstateQualityT2W_0333', 'ProstateQualityT2W_0336', 'ProstateQualityT2W_0344', 'ProstateQualityT2W_0347', 'ProstateQualityT2W_0353', 'ProstateQualityT2W_0362', 'ProstateQualityT2W_0367', 'ProstateQualityT2W_0370', 'ProstateQualityT2W_0381', 'ProstateQualityT2W_0382', 'ProstateQualityT2W_0384', 'ProstateQualityT2W_0387', 'ProstateQualityT2W_0389', 'ProstateQualityT2W_0392', 'ProstateQualityT2W_0393', 'ProstateQualityT2W_0401', 'ProstateQualityT2W_0405', 'ProstateQualityT2W_0408', 'ProstateQualityT2W_0409', 'ProstateQualityT2W_0417', 'ProstateQualityT2W_0420', 'ProstateQualityT2W_0421', 'ProstateQualityT2W_0423', 'ProstateQualityT2W_0425', 'ProstateQualityT2W_0427', 'ProstateQualityT2W_0435', 'ProstateQualityT2W_0437', 'ProstateQualityT2W_0438', 'ProstateQualityT2W_0450', 'ProstateQualityT2W_0453', 'ProstateQualityT2W_0454', 'ProstateQualityT2W_0463', 'ProstateQualityT2W_0466', 'ProstateQualityT2W_0467', 'ProstateQualityT2W_0469', 'ProstateQualityT2W_0490', 'ProstateQualityT2W_0502', 'ProstateQualityT2W_0503', 'ProstateQualityT2W_0512', 'ProstateQualityT2W_0522', 'ProstateQualityT2W_0527', 'ProstateQualityT2W_0529', 'ProstateQualityT2W_0531', 'ProstateQualityT2W_0537', 'ProstateQualityT2W_0541', 'ProstateQualityT2W_0546', 'ProstateQualityT2W_0548', 'ProstateQualityT2W_0550', 'ProstateQualityT2W_0566', 'ProstateQualityT2W_0568', 'ProstateQualityT2W_0590', 'ProstateQualityT2W_0592', 'ProstateQualityT2W_0594', 'ProstateQualityT2W_0597', 'ProstateQualityT2W_0599', 'ProstateQualityT2W_0604', 'ProstateQualityT2W_0613', 'ProstateQualityT2W_0625', 'ProstateQualityT2W_0630', 'ProstateQualityT2W_0635', 'ProstateQualityT2W_0638', 'ProstateQualityT2W_0642', 'ProstateQualityT2W_0643', 'ProstateQualityT2W_0648', 'ProstateQualityT2W_0651', 'ProstateQualityT2W_0656', 'ProstateQualityT2W_0657', 'ProstateQualityT2W_0660', 'ProstateQualityT2W_0666', 'ProstateQualityT2W_0668', 'ProstateQualityT2W_0673', 'ProstateQualityT2W_0686', 'ProstateQualityT2W_0690', 'ProstateQualityT2W_0701', 'ProstateQualityT2W_0708', 'ProstateQualityT2W_0709', 'ProstateQualityT2W_0716', 'ProstateQualityT2W_0727', 'ProstateQualityT2W_0729', 'ProstateQualityT2W_0731', 'ProstateQualityT2W_0735', 'ProstateQualityT2W_0737', 'ProstateQualityT2W_0741', 'ProstateQualityT2W_0757', 'ProstateQualityT2W_0766', 'ProstateQualityT2W_0768', 'ProstateQualityT2W_0769', 'ProstateQualityT2W_0777', 'ProstateQualityT2W_0785', 'ProstateQualityT2W_0786', 'ProstateQualityT2W_0788', 'ProstateQualityT2W_0793', 'ProstateQualityT2W_0796', 'ProstateQualityT2W_0797', 'ProstateQualityT2W_0800', 'ProstateQualityT2W_0811', 'ProstateQualityT2W_0812', 'ProstateQualityT2W_0817', 'ProstateQualityT2W_0818', 'ProstateQualityT2W_0820', 'ProstateQualityT2W_0822', 'ProstateQualityT2W_0824', 'ProstateQualityT2W_0831', 'ProstateQualityT2W_0834', 'ProstateQualityT2W_0841', 'ProstateQualityT2W_0842', 'ProstateQualityT2W_0847', 'ProstateQualityT2W_0853', 'ProstateQualityT2W_0854', 'ProstateQualityT2W_0861', 'ProstateQualityT2W_0867', 'ProstateQualityT2W_0879', 'ProstateQualityT2W_0880', 'ProstateQualityT2W_0888', 'ProstateQualityT2W_0896', 'ProstateQualityT2W_0897', 'ProstateQualityT2W_0906', 'ProstateQualityT2W_0916', 'ProstateQualityT2W_0920', 'ProstateQualityT2W_0922', 'ProstateQualityT2W_0928', 'ProstateQualityT2W_0930', 'ProstateQualityT2W_0931', 'ProstateQualityT2W_0935', 'ProstateQualityT2W_0936', 'ProstateQualityT2W_0940', 'ProstateQualityT2W_0941', 'ProstateQualityT2W_0952', 'ProstateQualityT2W_0956', 'ProstateQualityT2W_0962', 'ProstateQualityT2W_0967', 'ProstateQualityT2W_0972', 'ProstateQualityT2W_0977', 'ProstateQualityT2W_0985', 'ProstateQualityT2W_0987', 'ProstateQualityT2W_0991', 'ProstateQualityT2W_1003', 'ProstateQualityT2W_1036', 'ProstateQualityT2W_1041', 'ProstateQualityT2W_1047', 'ProstateQualityT2W_1048', 'ProstateQualityT2W_1052', 'ProstateQualityT2W_1058', 'ProstateQualityT2W_1064', 'ProstateQualityT2W_1072', 'ProstateQualityT2W_1077', 'ProstateQualityT2W_1087', 'ProstateQualityT2W_1092', 'ProstateQualityT2W_1103', 'ProstateQualityT2W_1120', 'ProstateQualityT2W_1122', 'ProstateQualityT2W_1128', 'ProstateQualityT2W_1134', 'ProstateQualityT2W_1135', 'ProstateQualityT2W_1137', 'ProstateQualityT2W_1139', 'ProstateQualityT2W_1140', 'ProstateQualityT2W_1141', 'ProstateQualityT2W_1145', 'ProstateQualityT2W_1146', 'ProstateQualityT2W_1148', 'ProstateQualityT2W_1150', 'ProstateQualityT2W_1157', 'ProstateQualityT2W_1172', 'ProstateQualityT2W_1187', 'ProstateQualityT2W_1188', 'ProstateQualityT2W_1191', 'ProstateQualityT2W_1193', 'ProstateQualityT2W_1196', 'ProstateQualityT2W_1198', 'ProstateQualityT2W_1207', 'ProstateQualityT2W_1209', 'ProstateQualityT2W_1211', 'ProstateQualityT2W_1220', 'ProstateQualityT2W_1221']) 
+2025-04-14 09:10:10.578736: lr: 0.01 
+2025-04-14 09:11:00.852753: <class 'universalclassifier.network_architecture.i3d.i3dpt.I3D'> 
+2025-04-14 09:11:01.115123: 
+epoch:  0 
+2025-04-14 09:25:50.613716: train loss : 0.5474 
+2025-04-14 09:26:07.181016: validation loss: 0.3855 
+2025-04-14 09:26:10.927603: lr: 0.009955 
+2025-04-14 09:26:10.937238: This epoch took 909.782712 s
+ 
+2025-04-14 09:26:10.938630: 
+epoch:  1 
+2025-04-14 09:41:08.117006: train loss : 0.3997 
+2025-04-14 09:41:21.148913: validation loss: 0.1646 
+2025-04-14 09:41:23.861591: lr: 0.00991 
+2025-04-14 09:41:23.963225: saving checkpoint... 
+2025-04-14 09:41:24.513928: done, saving took 0.64 seconds 
+2025-04-14 09:41:24.733262: This epoch took 913.793293 s
+ 
+2025-04-14 09:41:24.736364: 
+epoch:  2 
+2025-04-14 09:55:36.065001: train loss : 0.2531 
+2025-04-14 09:55:47.665461: validation loss: 0.2694 
+2025-04-14 09:55:51.867409: lr: 0.009865 
+2025-04-14 09:55:51.951742: saving checkpoint... 
+2025-04-14 09:55:52.725490: done, saving took 0.85 seconds 
+2025-04-14 09:55:53.075129: This epoch took 868.336992 s
+ 
+2025-04-14 09:55:53.088507: 
+epoch:  3 
+2025-04-14 10:10:34.312045: train loss : 0.3430 
+2025-04-14 10:10:48.084083: validation loss: 0.1702 
+2025-04-14 10:10:51.935391: lr: 0.00982 
+2025-04-14 10:10:52.069163: saving checkpoint... 
+2025-04-14 10:10:52.702863: done, saving took 0.74 seconds 
+2025-04-14 10:10:52.908273: This epoch took 899.818563 s
+ 
+2025-04-14 10:10:52.924039: 
+epoch:  4 
+2025-04-14 10:26:12.453664: train loss : 0.2199 
+2025-04-14 10:26:24.553756: validation loss: 0.1789 
+2025-04-14 10:26:28.666048: lr: 0.009775 
+2025-04-14 10:26:28.751935: saving checkpoint... 
+2025-04-14 10:26:29.752844: done, saving took 1.08 seconds 
+2025-04-14 10:26:30.040534: This epoch took 937.114285 s
+ 
+2025-04-14 10:26:30.047161: 
+epoch:  5 
+2025-04-14 10:41:56.469095: train loss : 0.2592 
+2025-04-14 10:42:11.349593: validation loss: 0.1416 
+2025-04-14 10:42:14.966768: lr: 0.00973 
+2025-04-14 10:42:15.134681: saving checkpoint... 
+2025-04-14 10:42:16.246080: done, saving took 1.26 seconds 
+2025-04-14 10:42:16.463128: This epoch took 946.411393 s
+ 
+2025-04-14 10:42:16.468842: 
+epoch:  6 
+2025-04-14 10:57:09.893399: train loss : 0.1827 
+2025-04-14 10:57:26.763134: validation loss: 0.0990 
+2025-04-14 10:57:31.555383: lr: 0.009684 
+2025-04-14 10:57:31.654592: saving checkpoint... 
+2025-04-14 10:57:32.461519: done, saving took 0.87 seconds 
+2025-04-14 10:57:32.740052: This epoch took 916.269538 s
+ 
+2025-04-14 10:57:32.764846: 
+epoch:  7 
+2025-04-14 11:11:59.041382: train loss : 0.1730 
+2025-04-14 11:12:15.970821: validation loss: 0.1586 
+2025-04-14 11:12:19.470994: lr: 0.009639 
+2025-04-14 11:12:19.805534: saving checkpoint... 
+2025-04-14 11:12:22.007224: done, saving took 2.26 seconds 
+2025-04-14 11:12:22.319707: This epoch took 889.552628 s
+ 
+2025-04-14 11:12:22.322364: 
+epoch:  8 
+2025-04-14 11:26:38.907388: train loss : 0.1928 
+2025-04-14 11:26:51.456437: validation loss: 0.2174 
+2025-04-14 11:26:55.066008: lr: 0.009594 
+2025-04-14 11:26:55.372308: saving checkpoint... 
+2025-04-14 11:26:56.373929: done, saving took 1.07 seconds 
+2025-04-14 11:26:56.732324: This epoch took 874.408373 s
+ 
+2025-04-14 11:26:56.745586: 
+epoch:  9 
+2025-04-14 11:41:24.073787: train loss : 0.1212 
+2025-04-14 11:41:35.734571: validation loss: 0.2758 
+2025-04-14 11:41:38.153055: lr: 0.009549 
+2025-04-14 11:41:38.160344: This epoch took 881.412950 s
+ 
+2025-04-14 11:41:38.161053: 
+epoch:  10 
+2025-04-14 11:56:13.911485: train loss : 0.1204 
+2025-04-14 11:56:31.757271: validation loss: 0.2942 
+2025-04-14 11:56:37.248810: lr: 0.009504 
+2025-04-14 11:56:38.167333: This epoch took 900.005732 s
+ 
+2025-04-14 11:56:38.571944: 
+epoch:  11 
+2025-04-14 12:11:13.494679: train loss : 0.1009 
+2025-04-14 12:11:32.543457: validation loss: 0.1214 
+2025-04-14 12:11:37.015440: lr: 0.009458 
+2025-04-14 12:11:37.217851: saving checkpoint... 
+2025-04-14 12:11:38.500684: done, saving took 1.41 seconds 
+2025-04-14 12:11:38.851114: This epoch took 899.221541 s
+ 
+2025-04-14 12:11:38.860640: 
+epoch:  12 
+2025-04-14 12:26:16.787442: train loss : 0.0984 
+2025-04-14 12:26:31.244169: validation loss: 0.3072 
+2025-04-14 12:26:34.951385: lr: 0.009413 
+2025-04-14 12:26:34.967054: This epoch took 896.104501 s
+ 
+2025-04-14 12:26:34.969069: 
+epoch:  13 
+2025-04-14 12:41:17.158134: train loss : 0.0782 
+2025-04-14 12:41:28.245784: validation loss: 0.2290 
+2025-04-14 12:41:31.567566: lr: 0.009368 
+2025-04-14 12:41:31.834045: This epoch took 896.863484 s
+ 
+2025-04-14 12:41:31.835684: 
+epoch:  14 
+2025-04-14 12:56:06.005565: train loss : 0.0730 
+2025-04-14 12:56:17.745659: validation loss: 0.2991 
+2025-04-14 12:56:20.859433: lr: 0.009322 
+2025-04-14 12:56:20.873613: This epoch took 889.035396 s
+ 
+2025-04-14 12:56:20.874154: 
+epoch:  15 
+2025-04-14 13:11:04.717909: train loss : 0.1455 
+2025-04-14 13:11:17.331614: validation loss: 0.1759 
+2025-04-14 13:11:20.509356: lr: 0.009277 
+2025-04-14 13:11:20.628621: saving checkpoint... 
+2025-04-14 13:11:21.627429: done, saving took 1.10 seconds 
+2025-04-14 13:11:22.674496: This epoch took 901.799839 s
+ 
+2025-04-14 13:11:22.688817: 
+epoch:  16 
+2025-04-14 13:25:43.240133: train loss : 0.0783 
+2025-04-14 13:25:56.357629: validation loss: 0.1511 
+2025-04-14 13:25:59.930818: lr: 0.009232 
+2025-04-14 13:26:00.010641: saving checkpoint... 
+2025-04-14 13:26:01.149405: done, saving took 1.21 seconds 
+2025-04-14 13:26:01.646875: This epoch took 878.957382 s
+ 
+2025-04-14 13:26:01.656761: 
+epoch:  17 
+2025-04-14 13:40:39.280705: train loss : 0.0705 
+2025-04-14 13:40:52.983508: validation loss: 0.1389 
+2025-04-14 13:40:56.168560: lr: 0.009186 
+2025-04-14 13:40:56.302045: saving checkpoint... 
+2025-04-14 13:40:57.151497: done, saving took 0.97 seconds 
+2025-04-14 13:40:57.408100: This epoch took 895.749799 s
+ 
+2025-04-14 13:40:57.419441: 
+epoch:  18 
+2025-04-14 13:55:20.717970: train loss : 0.0925 
+2025-04-14 13:55:34.449290: validation loss: 0.0915 
+2025-04-14 13:55:38.715402: lr: 0.009141 
+2025-04-14 13:55:38.847847: saving checkpoint... 
+2025-04-14 13:55:40.011469: done, saving took 1.28 seconds 
+2025-04-14 13:55:40.371395: This epoch took 882.951315 s
+ 
+2025-04-14 13:55:40.383574: 
+epoch:  19 
+2025-04-14 14:09:43.780332: train loss : 0.0715 
+2025-04-14 14:09:56.350365: validation loss: 0.1351 
+2025-04-14 14:09:59.176363: lr: 0.009095 
+2025-04-14 14:09:59.268145: saving checkpoint... 
+2025-04-14 14:10:00.230155: done, saving took 1.04 seconds 
+2025-04-14 14:10:00.531120: This epoch took 860.146933 s
+ 
+2025-04-14 14:10:00.539913: 
+epoch:  20 
+2025-04-14 14:24:17.984675: train loss : 0.1080 
+2025-04-14 14:24:34.039944: validation loss: 0.1481 
+2025-04-14 14:24:39.323951: lr: 0.00905 
+2025-04-14 14:24:39.680960: saving checkpoint... 
+2025-04-14 14:24:41.919874: done, saving took 2.58 seconds 
+2025-04-14 14:24:42.547473: This epoch took 882.006792 s
+ 
+2025-04-14 14:24:42.550737: 
+epoch:  21 
+2025-04-14 14:39:21.805339: train loss : 0.0673 
+2025-04-14 14:39:33.245213: validation loss: 0.1025 
+2025-04-14 14:39:36.750474: lr: 0.009004 
+2025-04-14 14:39:36.884530: saving checkpoint... 
+2025-04-14 14:39:37.777775: done, saving took 1.01 seconds 
+2025-04-14 14:39:38.136415: This epoch took 895.583653 s
+ 
+2025-04-14 14:39:38.137724: 
+epoch:  22 
+2025-04-14 14:54:42.755640: train loss : 0.0611 
+2025-04-14 14:55:21.951739: validation loss: 0.1749 
+2025-04-14 14:55:25.983440: lr: 0.008959 
+2025-04-14 14:55:26.064133: saving checkpoint... 
+2025-04-14 14:55:26.732545: done, saving took 0.73 seconds 
+2025-04-14 14:55:26.878978: This epoch took 948.740261 s
+ 
+2025-04-14 14:55:26.890911: 
+epoch:  23 
+2025-04-14 15:09:37.490278: train loss : 0.0641 
+2025-04-14 15:09:54.679938: validation loss: 0.0983 
+2025-04-14 15:09:58.255406: lr: 0.008913 
+2025-04-14 15:09:58.335988: saving checkpoint... 
+2025-04-14 15:10:16.469995: done, saving took 18.20 seconds 
+2025-04-14 15:10:17.084651: This epoch took 890.191719 s
+ 
+2025-04-14 15:10:17.258420: 
+epoch:  24 
+2025-04-14 15:24:50.980161: train loss : 0.0392 
+2025-04-14 15:25:01.769198: validation loss: 0.1098 
+2025-04-14 15:25:04.440278: lr: 0.008868 
+2025-04-14 15:25:04.479157: saving checkpoint... 
+2025-04-14 15:25:05.060835: done, saving took 0.61 seconds 
+2025-04-14 15:25:05.277510: This epoch took 888.006788 s
+ 
+2025-04-14 15:25:05.284751: 
+epoch:  25 
+2025-04-14 15:39:18.016487: train loss : 0.0293 
+2025-04-14 15:39:31.351677: validation loss: 0.1656 
+2025-04-14 15:39:34.883425: lr: 0.008822 
+2025-04-14 15:39:34.992274: saving checkpoint... 
+2025-04-14 15:39:35.944332: done, saving took 1.05 seconds 
+2025-04-14 15:39:36.247101: This epoch took 870.960280 s
+ 
+2025-04-14 15:39:36.256711: 
+epoch:  26 
+2025-04-14 15:53:59.495013: train loss : 0.0482 
+2025-04-14 15:54:11.651642: validation loss: 0.1062 
+2025-04-14 15:54:14.992864: lr: 0.008776 
+2025-04-14 15:54:15.060913: saving checkpoint... 
+2025-04-14 15:54:15.706577: done, saving took 0.71 seconds 
+2025-04-14 15:54:15.933601: This epoch took 879.674840 s
+ 
+2025-04-14 15:54:15.936194: 
+epoch:  27 
+2025-04-14 16:09:22.756386: train loss : 0.0777 
+2025-04-14 16:09:35.998623: validation loss: 0.1963 
+2025-04-14 16:09:39.242582: lr: 0.008731 
+2025-04-14 16:09:39.462934: This epoch took 923.525361 s
+ 
+2025-04-14 16:09:39.464689: 
+epoch:  28 
+2025-04-14 16:24:25.664768: train loss : 0.0627 
+2025-04-14 16:24:36.439227: validation loss: 0.0773 
+2025-04-14 16:24:40.172893: lr: 0.008685 
+2025-04-14 16:24:40.268933: saving checkpoint... 
+2025-04-14 16:24:41.032977: done, saving took 0.84 seconds 
+2025-04-14 16:24:41.243310: This epoch took 901.777169 s
+ 
+2025-04-14 16:24:41.251204: 
+epoch:  29 
+2025-04-14 16:39:22.229765: train loss : 0.0453 
+2025-04-14 16:39:36.769812: validation loss: 0.0861 
+2025-04-14 16:39:39.990176: lr: 0.008639 
+2025-04-14 16:39:40.071296: saving checkpoint... 
+2025-04-14 16:39:40.864692: done, saving took 0.86 seconds 
+2025-04-14 16:39:41.118724: This epoch took 899.866114 s
+ 
+2025-04-14 16:39:41.133284: 
+epoch:  30 
+2025-04-14 16:53:34.496689: train loss : 0.0408 
+2025-04-14 16:53:47.418230: validation loss: 0.2097 
+2025-04-14 16:53:51.119418: lr: 0.008594 
+2025-04-14 16:53:51.139908: This epoch took 850.004932 s
+ 
+2025-04-14 16:53:51.143775: 
+epoch:  31 
+2025-04-14 17:08:29.348190: train loss : 0.0316 
+2025-04-14 17:08:41.111481: validation loss: 0.1350 
+2025-04-14 17:08:44.599442: lr: 0.008548 
+2025-04-14 17:08:44.609528: This epoch took 893.464637 s
+ 
+2025-04-14 17:08:44.610701: 
+epoch:  32 
+2025-04-14 17:23:30.688978: train loss : 0.0397 
+2025-04-14 17:23:44.345648: validation loss: 0.1623 
+2025-04-14 17:23:48.367387: lr: 0.008502 
+2025-04-14 17:23:48.381218: This epoch took 903.769448 s
+ 
+2025-04-14 17:23:48.381952: 
+epoch:  33 
+2025-04-14 17:38:15.833069: train loss : 0.0395 
+2025-04-14 17:38:27.662162: validation loss: 0.0517 
+2025-04-14 17:38:30.183228: lr: 0.008456 
+2025-04-14 17:38:30.239201: saving checkpoint... 
+2025-04-14 17:38:30.865285: done, saving took 0.67 seconds 
+2025-04-14 17:38:31.107390: This epoch took 882.724736 s
+ 
+2025-04-14 17:38:31.108483: 
+epoch:  34 
+2025-04-14 17:53:00.371098: train loss : 0.0290 
+2025-04-14 17:53:14.548891: validation loss: 0.0491 
+2025-04-14 17:53:18.301621: lr: 0.00841 
+2025-04-14 17:53:18.429096: saving checkpoint... 
+2025-04-14 17:53:19.571153: done, saving took 1.25 seconds 
+2025-04-14 17:53:19.850795: This epoch took 888.741294 s
+ 
+2025-04-14 17:53:19.852849: 
+epoch:  35 
+2025-04-14 18:08:17.968869: train loss : 0.0256 
+2025-04-14 18:08:32.039473: validation loss: 0.1514 
+2025-04-14 18:08:35.179398: lr: 0.008364 
+2025-04-14 18:08:35.189707: This epoch took 915.335977 s
+ 
+2025-04-14 18:08:35.191496: 
+epoch:  36 
+2025-04-14 18:23:18.248796: train loss : 0.0423 
+2025-04-14 18:23:30.158664: validation loss: 0.2934 
+2025-04-14 18:23:33.924814: lr: 0.008318 
+2025-04-14 18:23:34.007227: This epoch took 898.814747 s
+ 
+2025-04-14 18:23:34.019013: 
+epoch:  37 
+2025-04-14 18:38:16.228972: train loss : 0.0516 
+2025-04-14 18:38:34.260057: validation loss: 0.0555 
+2025-04-14 18:38:38.194646: lr: 0.008272 
+2025-04-14 18:38:38.594586: This epoch took 904.566099 s
+ 
+2025-04-14 18:38:38.704982: 
+epoch:  38 
+2025-04-14 18:52:21.268773: train loss : 0.0398 
+2025-04-14 18:52:36.730461: validation loss: 0.2115 
+2025-04-14 18:52:40.820571: lr: 0.008227 
+2025-04-14 18:52:40.844049: This epoch took 842.129119 s
+ 
+2025-04-14 18:52:40.844621: 
+epoch:  39 
+2025-04-14 19:07:19.814950: train loss : 0.0856 
+2025-04-14 19:07:36.071537: validation loss: 0.1386 
+2025-04-14 19:07:41.340265: lr: 0.008181 
+2025-04-14 19:07:41.358528: This epoch took 900.513324 s
+ 
+2025-04-14 19:07:41.360080: 
+epoch:  40 
+2025-04-14 19:21:52.839648: train loss : 0.0551 
+2025-04-14 19:22:08.130533: validation loss: 0.1993 
+2025-04-14 19:22:22.186741: lr: 0.008134 
+2025-04-14 19:22:22.207414: This epoch took 880.846468 s
+ 
+2025-04-14 19:22:22.362721: 
+epoch:  41 
+2025-04-14 19:36:36.743649: train loss : 0.0212 
+2025-04-14 19:37:03.047528: validation loss: 0.0588 
+2025-04-14 19:38:45.551497: lr: 0.008088 
+2025-04-14 19:38:45.551497: lr: 0.008088 
+2025-04-14 19:38:45.551497: lr: 0.008088 
+2025-04-14 19:38:45.551497: lr: 0.008088 
+2025-04-14 19:38:45.551497: lr: 0.008088 
+2025-04-14 19:38:48.903179: This epoch took 986.538647 s
+ 
+2025-04-14 19:38:48.903179: This epoch took 986.538647 s
+ 
+2025-04-14 19:38:48.903179: This epoch took 986.538647 s
+ 
+2025-04-14 19:38:48.903179: This epoch took 986.538647 s
+ 
+2025-04-14 19:38:57.518957: 
+epoch:  42 
+2025-04-14 19:52:24.549885: train loss : 0.0314 
+2025-04-14 19:52:38.808702: validation loss: 0.1723 
+2025-04-14 19:52:42.678959: failed to plot:  (<class 'OSError'>, OSError(28, 'No space left on device'), <traceback object at 0x7fb63a5d9f40>) 
+2025-04-14 19:52:42.703805: lr: 0.008042 
+2025-04-14 19:52:42.705447: This epoch took 823.702995 s
+ 
+2025-04-14 19:52:42.706922: 
+epoch:  43 
+2025-04-14 20:07:15.949631: train loss : 0.0122 
+2025-04-14 20:07:27.529155: validation loss: 0.1158 
+2025-04-14 20:07:30.593694: lr: 0.007996 
+2025-04-14 20:07:30.801255: This epoch took 888.092672 s
+ 
+2025-04-14 20:07:30.807784: 
+epoch:  44 
+2025-04-14 20:22:07.807531: train loss : 0.0171 
+2025-04-14 20:22:18.673427: validation loss: 0.1642 
+2025-04-14 20:22:23.130991: lr: 0.00795 
+2025-04-14 20:22:23.218016: This epoch took 892.407118 s
+ 
+2025-04-14 20:22:23.219608: 
+epoch:  45 
+2025-04-14 20:36:51.104523: train loss : 0.0274 
+2025-04-14 20:37:06.377174: validation loss: 0.1819 
+2025-04-14 20:37:09.605928: lr: 0.007904 
+2025-04-14 20:37:09.629963: This epoch took 886.409493 s
+ 
+2025-04-14 20:37:09.631434: 
+epoch:  46 
+2025-04-14 20:51:29.391720: train loss : 0.1065 
+2025-04-14 20:51:41.254860: validation loss: 0.2715 
+2025-04-14 20:51:44.162166: lr: 0.007858 
+2025-04-14 20:51:44.172317: This epoch took 874.539895 s
+ 
+2025-04-14 20:51:44.175054: 
+epoch:  47 
+2025-04-14 21:05:33.318440: train loss : 0.0449 
+2025-04-14 21:05:44.239454: validation loss: 0.1332 
+2025-04-14 21:05:47.620512: lr: 0.007811 
+2025-04-14 21:05:47.643527: This epoch took 843.467375 s
+ 
+2025-04-14 21:05:47.644556: 
+epoch:  48 
+2025-04-14 21:20:35.838223: train loss : 0.0201 
+2025-04-14 21:20:47.405291: validation loss: 0.0731 
+2025-04-14 21:20:49.829977: lr: 0.007765 
+2025-04-14 21:20:49.839175: This epoch took 902.160574 s
+ 
+2025-04-14 21:20:49.840899: 
+epoch:  49 
+2025-04-14 21:35:16.900535: train loss : 0.0225 
+2025-04-14 21:35:28.970375: validation loss: 0.0819 
+2025-04-14 21:35:31.744876: lr: 0.007719 
+2025-04-14 21:35:31.757920: saving scheduled checkpoint file... 
+2025-04-14 21:35:31.813743: saving checkpoint... 
+2025-04-14 21:35:32.492256: done, saving took 0.73 seconds 
+2025-04-14 21:35:32.734626: done 
+2025-04-14 21:35:32.736068: This epoch took 882.893283 s
+ 
+2025-04-14 21:35:32.737362: 
+epoch:  50 
+2025-04-14 21:50:03.180768: train loss : 0.0233 
+2025-04-14 21:50:15.429364: validation loss: 0.1427 
+2025-04-14 21:50:17.643427: lr: 0.007673 
+2025-04-14 21:50:17.652919: This epoch took 884.914090 s
+ 
+2025-04-14 21:50:17.653631: 
+epoch:  51 
+2025-04-14 22:04:23.282414: train loss : 0.0361 
+2025-04-14 22:04:34.159442: validation loss: 0.1395 
+2025-04-14 22:04:38.055431: lr: 0.007626 
+2025-04-14 22:04:38.074936: This epoch took 860.420397 s
+ 
+2025-04-14 22:04:38.075780: 
+epoch:  52 
+2025-04-14 22:19:24.508725: train loss : 0.0729 
+2025-04-14 22:19:36.905459: validation loss: 0.1198 
+2025-04-14 22:19:40.194192: lr: 0.00758 
+2025-04-14 22:19:40.203742: This epoch took 902.126489 s
+ 
+2025-04-14 22:19:40.205004: 
+epoch:  53 
+2025-04-14 22:34:05.848336: train loss : 0.0578 
+2025-04-14 22:34:19.640136: validation loss: 0.0896 
+2025-04-14 22:34:22.701190: lr: 0.007533 
+2025-04-14 22:34:22.756753: saving checkpoint... 
+2025-04-14 22:34:23.301650: done, saving took 0.59 seconds 
+2025-04-14 22:34:23.505820: This epoch took 883.299942 s
+ 
+2025-04-14 22:34:23.506922: 
+epoch:  54 
+2025-04-14 22:48:59.953249: train loss : 0.0358 
+2025-04-14 22:49:11.378631: validation loss: 0.0281 
+2025-04-14 22:49:14.547494: lr: 0.007487 
+2025-04-14 22:49:14.728590: saving checkpoint... 
+2025-04-14 22:49:15.289824: done, saving took 0.61 seconds 
+2025-04-14 22:49:15.509117: This epoch took 892.001526 s
+ 
+2025-04-14 22:49:15.511420: 
+epoch:  55 
+2025-04-14 23:03:46.574317: train loss : 0.0104 
+2025-04-14 23:03:58.321655: validation loss: 0.1167 
+2025-04-14 23:04:00.727434: lr: 0.00744 
+2025-04-14 23:04:00.779241: saving checkpoint... 
+2025-04-14 23:04:01.620409: done, saving took 0.88 seconds 
+2025-04-14 23:04:01.851355: This epoch took 886.337736 s
+ 
+2025-04-14 23:04:01.860085: 
+epoch:  56 
+2025-04-14 23:17:47.835304: train loss : 0.0259 
+2025-04-14 23:18:00.982594: validation loss: 0.0609 
+2025-04-14 23:18:05.067327: lr: 0.007394 
+2025-04-14 23:18:05.146411: saving checkpoint... 
+2025-04-14 23:18:05.947485: done, saving took 0.87 seconds 
+2025-04-14 23:18:06.273037: This epoch took 844.411204 s
+ 
+2025-04-14 23:18:06.285859: 
+epoch:  57 
+2025-04-14 23:32:40.903270: train loss : 0.0176 
+2025-04-14 23:32:53.619103: validation loss: 0.0627 
+2025-04-14 23:32:56.917504: lr: 0.007347 
+2025-04-14 23:32:56.986581: saving checkpoint... 
+2025-04-14 23:32:57.795362: done, saving took 0.87 seconds 
+2025-04-14 23:32:58.041962: This epoch took 891.755179 s
+ 
+2025-04-14 23:32:58.048103: 
+epoch:  58 
+2025-04-14 23:47:19.942653: train loss : 0.0063 
+2025-04-14 23:47:31.453452: validation loss: 0.0661 
+2025-04-14 23:47:34.969755: lr: 0.007301 
+2025-04-14 23:47:35.070305: saving checkpoint... 
+2025-04-14 23:47:35.766534: done, saving took 0.79 seconds 
+2025-04-14 23:47:35.979292: This epoch took 877.930526 s
+ 
+2025-04-14 23:47:35.987708: 
+epoch:  59 
+2025-04-15 00:01:56.109313: train loss : 0.0062 
+2025-04-15 00:02:06.429457: validation loss: 0.1420 
+2025-04-15 00:02:08.347459: lr: 0.007254 
+2025-04-15 00:02:08.353286: This epoch took 872.364323 s
+ 
+2025-04-15 00:02:08.353950: 
+epoch:  60 
+2025-04-15 00:16:44.338682: train loss : 0.0024 
+2025-04-15 00:16:56.361579: validation loss: 0.1811 
+2025-04-15 00:16:59.116685: lr: 0.007208 
+2025-04-15 00:16:59.127182: This epoch took 890.772269 s
+ 
+2025-04-15 00:16:59.128387: 
+epoch:  61 
+2025-04-15 00:31:37.900204: train loss : 0.0072 
+2025-04-15 00:31:50.508408: validation loss: 0.0436 
+2025-04-15 00:31:53.774058: lr: 0.007161 
+2025-04-15 00:31:53.789606: This epoch took 894.659925 s
+ 
+2025-04-15 00:31:53.790234: 
+epoch:  62 
+2025-04-15 00:46:32.546618: train loss : 0.0118 
+2025-04-15 00:46:43.684629: validation loss: 0.2683 
+2025-04-15 00:46:45.847414: lr: 0.007114 
+2025-04-15 00:46:45.855101: This epoch took 892.064302 s
+ 
+2025-04-15 00:46:45.855807: 
+epoch:  63 
+2025-04-15 01:00:40.831981: train loss : 0.0188 
+2025-04-15 01:00:52.860773: validation loss: 0.1701 
+2025-04-15 01:00:56.157272: lr: 0.007067 
+2025-04-15 01:00:56.166709: This epoch took 850.310296 s
+ 
+2025-04-15 01:00:56.168830: 
+epoch:  64 
+2025-04-15 01:15:31.942217: train loss : 0.0115 
+2025-04-15 01:15:43.057134: validation loss: 0.1244 
+2025-04-15 01:15:45.437981: lr: 0.007021 
+2025-04-15 01:15:45.445180: This epoch took 889.275030 s
+ 
+2025-04-15 01:15:45.445847: 
+epoch:  65 
+2025-04-15 01:30:08.159027: train loss : 0.0154 
+2025-04-15 01:30:20.261386: validation loss: 0.1409 
+2025-04-15 01:30:23.618100: lr: 0.006974 
+2025-04-15 01:30:23.626302: This epoch took 878.179935 s
+ 
+2025-04-15 01:30:23.627253: 
+epoch:  66 
+2025-04-15 01:44:50.992315: train loss : 0.0113 
+2025-04-15 01:45:02.599002: validation loss: 0.1933 
+2025-04-15 01:45:06.666830: lr: 0.006927 
+2025-04-15 01:45:06.690235: This epoch took 883.061715 s
+ 
+2025-04-15 01:45:06.690916: 
+epoch:  67 
+2025-04-15 01:59:58.762513: train loss : 0.0161 
+2025-04-15 02:00:10.116551: validation loss: 0.1171 
+2025-04-15 02:00:11.860123: lr: 0.00688 
+2025-04-15 02:00:11.866772: This epoch took 905.175153 s
+ 
+2025-04-15 02:00:11.867585: 
+epoch:  68 
+2025-04-15 02:14:33.284210: train loss : 0.0116 
+2025-04-15 02:14:44.900741: validation loss: 0.1267 
+2025-04-15 02:14:47.721037: lr: 0.006833 
+2025-04-15 02:14:47.729413: This epoch took 875.861288 s
+ 
+2025-04-15 02:14:47.730489: 
+epoch:  69 
+2025-04-15 02:29:00.081886: train loss : 0.0116 
+2025-04-15 02:29:12.650892: validation loss: 0.1178 
+2025-04-15 02:29:16.081223: lr: 0.006786 
+2025-04-15 02:29:16.098373: This epoch took 868.366413 s
+ 
+2025-04-15 02:29:16.099210: 
+epoch:  70 
+2025-04-15 02:44:03.686192: train loss : 0.0163 
+2025-04-15 02:44:17.242068: validation loss: 0.0986 
+2025-04-15 02:44:20.605797: lr: 0.006739 
+2025-04-15 02:44:20.613704: This epoch took 904.513527 s
+ 
+2025-04-15 02:44:20.614732: 
+epoch:  71 
+2025-04-15 02:58:39.783247: train loss : 0.0071 
+2025-04-15 02:58:55.095479: validation loss: 0.0649 
+2025-04-15 02:58:58.331398: lr: 0.006692 
+2025-04-15 02:58:58.351316: This epoch took 877.735873 s
+ 
+2025-04-15 02:58:58.352092: 
+epoch:  72 
+2025-04-15 03:13:15.401628: train loss : 0.0099 
+2025-04-15 03:13:27.511664: validation loss: 0.0252 
+2025-04-15 03:13:30.887379: lr: 0.006645 
+2025-04-15 03:13:30.897649: This epoch took 872.544762 s
+ 
+2025-04-15 03:13:30.898346: 
+epoch:  73 
+2025-04-15 03:27:54.920140: train loss : 0.0053 
+2025-04-15 03:28:06.830575: validation loss: 0.2657 
+2025-04-15 03:28:10.182369: lr: 0.006598 
+2025-04-15 03:28:10.193273: This epoch took 879.294233 s
+ 
+2025-04-15 03:28:10.194669: 
+epoch:  74 
+2025-04-15 03:42:47.356230: train loss : 0.0244 
+2025-04-15 03:42:59.067869: validation loss: 0.4291 
+2025-04-15 03:43:01.645118: lr: 0.006551 
+2025-04-15 03:43:01.658440: This epoch took 891.463127 s
+ 
+2025-04-15 03:43:01.659785: 
+epoch:  75 
+2025-04-15 03:57:22.345179: train loss : 0.0270 
+2025-04-15 03:57:34.907914: validation loss: 0.3094 
+2025-04-15 03:57:37.185211: lr: 0.006504 
+2025-04-15 03:57:37.193365: This epoch took 875.532209 s
+ 
+2025-04-15 03:57:37.194343: 
+epoch:  76 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              56 
+2025-04-15 04:15:37.152595: This epoch took 1079.957473 s
+ 
+2025-04-15 04:15:37.152595: This epoch took 1079.957473 s
+ 
+2025-04-15 05:14:08.082393: train loss : 0.0091 
+2025-04-15 05:14:19.619930: validation loss: 0.1822 
+2025-04-15 05:14:50.569986: failed to plot:  (<class 'OSError'>, OSError(28, 'No space left on device'), <traceback object at 0x7fb618239f40>) 
+2025-04-15 05:14:50.578341: lr: 0.006267 
+2025-04-15 05:14:59.706264: This epoch took 916.399300 s
+ 
+2025-04-15 05:15:02.268919: 
+epoch:  81 
+2025-04-15 05:29:03.431473: train loss : 0.0084 
+2025-04-15 05:29:15.720860: validation loss: 0.0937 
+2025-04-15 05:29:41.555356: lr: 0.00622 
+2025-04-15 05:29:41.555356: lr: 0.00622 
+2025-04-15 05:29:46.733407: This epoch took 884.458238 s
+ 
+2025-04-15 05:29:46.740232: 
+epoch:  82 
+2025-04-15 05:43:52.599897: train loss : 0.0021 
+2025-04-15 05:44:03.867184: validation loss: 0.0403 
+2025-04-15 05:44:06.640778: lr: 0.006172 
+2025-04-15 05:44:06.646256: This epoch took 852.126461 s
+ 
+2025-04-15 05:44:06.646858: 
+epoch:  83 
+2025-04-15 05:58:43.810655: train loss : 0.0020 
+2025-04-15 05:59:02.523149: validation loss: 0.0917 
+2025-04-15 05:59:28.664871: failed to plot:  (<class 'OSError'>, OSError(28, 'No space left on device'), <traceback object at 0x7fb6182c1f40>) 
+2025-04-15 05:59:28.664871: failed to plot:  (<class 'OSError'>, OSError(28, 'No space left on device'), <traceback object at 0x7fb6182c1f40>) 
+2025-04-15 05:59:28.664871: failed to plot:  (<class 'OSError'>, OSError(28, 'No space left on device'), <traceback object at 0x7fb6182c1f40>) 
+2025-04-15 05:59:28.664871: failed to plot:  (<class 'OSError'>, OSError(28, 'No space left on device'), <traceback object at 0x7fb6182c1f40>) 
+2025-04-15 05:59:38.481935: lr: 0.006125 
+2025-04-15 05:59:44.224952: This epoch took 937.577301 s
+ 
+2025-04-15 05:59:44.231131: 
+epoch:  84 
+2025-04-15 06:13:42.494603: train loss : 0.0029 
+2025-04-15 06:13:56.236738: validation loss: 0.2165 
+2025-04-15 06:13:59.300564: lr: 0.006077 
+2025-04-15 06:13:59.373531: This epoch took 855.141774 s
+ 
+2025-04-15 06:13:59.374444: 
+epoch:  85 
+2025-04-15 06:28:29.961216: train loss : 0.0026 
+2025-04-15 06:28:43.034398: validation loss: 0.0963 
+2025-04-15 06:28:46.247401: lr: 0.00603 
+2025-04-15 06:28:46.259278: This epoch took 886.884120 s
+ 
+2025-04-15 06:28:46.260168: 
+epoch:  86 
+2025-04-15 06:43:27.239671: train loss : 0.0013 
+2025-04-15 06:43:39.239874: validation loss: 0.2544 
+2025-04-15 06:43:41.892835: lr: 0.005982 
+2025-04-15 06:43:41.901713: This epoch took 895.640949 s
+ 
+2025-04-15 06:43:41.902414: 
+epoch:  87 
+2025-04-15 06:58:27.688976: train loss : 0.0007 
+2025-04-15 06:58:39.954410: validation loss: 0.1354 
+2025-04-15 06:58:43.036760: lr: 0.005934 
+2025-04-15 06:58:43.048766: This epoch took 901.144673 s
+ 
+2025-04-15 06:58:43.049690: 
+epoch:  88 
+2025-04-15 07:13:08.878653: train loss : 0.0078 
+2025-04-15 07:13:20.582783: validation loss: 0.1389 
+2025-04-15 07:13:23.214255: lr: 0.005887 
+2025-04-15 07:13:23.233571: This epoch took 880.181495 s
+ 
+2025-04-15 07:13:23.234951: 
+epoch:  89 
+2025-04-15 07:28:14.320707: train loss : 0.0120 
+2025-04-15 07:28:25.956547: validation loss: 0.1258 
+2025-04-15 07:28:28.947424: lr: 0.005839 
+2025-04-15 07:28:28.957114: This epoch took 905.720358 s
+ 
+2025-04-15 07:28:28.958281: 
+epoch:  90 
+2025-04-15 07:42:52.335029: train loss : 0.0207 
+2025-04-15 07:43:04.769467: validation loss: 0.1608 
+2025-04-15 07:43:09.879387: lr: 0.005791 
+2025-04-15 07:43:09.893139: This epoch took 880.933152 s
+ 
+2025-04-15 07:43:09.893924: 
+epoch:  91 
+2025-04-15 07:57:56.023295: train loss : 0.0070 
+2025-04-15 07:58:07.569835: validation loss: 0.1555 
+2025-04-15 07:58:10.356118: lr: 0.005743 
+2025-04-15 07:58:10.372336: This epoch took 900.477862 s
+ 
+2025-04-15 07:58:10.373414: 
+epoch:  92 
+2025-04-15 08:13:08.851632: train loss : 0.0015 
+2025-04-15 08:13:21.098076: validation loss: 0.0606 
+2025-04-15 08:13:23.996495: lr: 0.005695 
+2025-04-15 08:13:24.011317: This epoch took 913.636612 s
+ 
+2025-04-15 08:13:24.013240: 
+epoch:  93 
+2025-04-15 08:27:34.378551: train loss : 0.0009 
+2025-04-15 08:27:47.076988: validation loss: 0.1948 
+2025-04-15 08:27:50.302155: lr: 0.005647 
+2025-04-15 08:27:50.311414: This epoch took 866.297184 s
+ 
+2025-04-15 08:27:50.312210: 
+epoch:  94 
+2025-04-15 08:42:25.277001: train loss : 0.0019 
+2025-04-15 08:42:38.465574: validation loss: 0.2059 
+2025-04-15 08:42:41.684465: lr: 0.005599 
+2025-04-15 08:42:41.692712: This epoch took 891.379336 s
+ 
+2025-04-15 08:42:41.693462: 
+epoch:  95 
+2025-04-15 08:57:41.820507: train loss : 0.0038 
+2025-04-15 08:57:53.610336: validation loss: 0.1795 
+2025-04-15 08:57:57.304498: lr: 0.005551 
+2025-04-15 08:57:57.325416: This epoch took 915.631410 s
+ 
+2025-04-15 08:57:57.326256: 
+epoch:  96 
+2025-04-15 09:12:31.960993: train loss : 0.0088 
+2025-04-15 09:12:44.098936: validation loss: 0.1050 
+2025-04-15 09:12:46.596574: lr: 0.005503 
+2025-04-15 09:12:46.603168: This epoch took 889.276218 s
+ 
+2025-04-15 09:12:46.603766: 
+epoch:  97 
+2025-04-15 09:27:02.595712: train loss : 0.0198 
+2025-04-15 09:27:16.274704: validation loss: 0.0926 
+2025-04-15 09:27:18.359340: lr: 0.005455 
+2025-04-15 09:27:18.365842: This epoch took 871.761494 s
+ 
+2025-04-15 09:27:18.366939: 
+epoch:  98 
+2025-04-15 09:41:56.254585: train loss : 0.0107 
+2025-04-15 09:42:09.021250: validation loss: 0.1646 
+2025-04-15 09:42:12.676626: lr: 0.005407 
+2025-04-15 09:42:12.683379: This epoch took 894.314489 s
+ 
+2025-04-15 09:42:12.684081: 
+epoch:  99 
+2025-04-15 09:57:00.037606: train loss : 0.0026 
+2025-04-15 09:57:12.198605: validation loss: 0.2308 
+2025-04-15 09:57:15.742712: lr: 0.005359 
+2025-04-15 09:57:15.971228: saving scheduled checkpoint file... 
+2025-04-15 09:57:16.073114: saving checkpoint... 
+2025-04-15 09:57:16.772840: done, saving took 0.80 seconds 
+2025-04-15 09:57:17.147115: done 
+2025-04-15 09:57:17.152700: This epoch took 904.467993 s
+ 
+2025-04-15 09:57:17.153335: 
+epoch:  100 
+2025-04-15 10:12:19.587337: train loss : 0.0019 
+2025-04-15 10:12:32.754225: validation loss: 0.1819 
+2025-04-15 10:12:37.003808: lr: 0.005311 
+2025-04-15 10:12:37.025903: This epoch took 919.871937 s
+ 
+2025-04-15 10:12:37.026899: 
+epoch:  101 
+2025-04-15 10:27:15.891928: train loss : 0.0087 
+2025-04-15 10:27:28.058081: validation loss: 0.1759 
+2025-04-15 10:27:31.216555: lr: 0.005262 
+2025-04-15 10:27:31.223881: This epoch took 894.196264 s
+ 
+2025-04-15 10:27:31.225468: 
+epoch:  102 
+2025-04-15 10:42:09.115789: train loss : 0.0023 
+2025-04-15 10:42:22.045574: validation loss: 0.1154 
+2025-04-15 10:42:25.465396: lr: 0.005214 
+2025-04-15 10:42:25.475569: This epoch took 894.042374 s
+ 
+2025-04-15 10:42:25.477130: 
+epoch:  103 
+2025-04-15 10:56:50.897143: train loss : 0.0016 
+2025-04-15 10:57:05.519368: validation loss: 0.0782 
+2025-04-15 10:57:09.057927: lr: 0.005166 
+2025-04-15 10:57:09.333932: This epoch took 883.855887 s
+ 
+2025-04-15 10:57:09.478104: 
+epoch:  104 
+2025-04-15 11:11:20.889296: train loss : 0.0141 
+2025-04-15 11:11:32.479961: validation loss: 0.0630 
+2025-04-15 11:11:36.363288: lr: 0.005117 
+2025-04-15 11:11:36.375092: This epoch took 866.743826 s
+ 
+2025-04-15 11:11:36.376310: 
+epoch:  105 
+2025-04-15 11:25:54.255136: train loss : 0.0107 
+2025-04-15 11:26:15.639988: validation loss: 0.2092 
+2025-04-15 11:26:19.538947: lr: 0.005069 
+2025-04-15 11:26:19.557914: This epoch took 883.180857 s
+ 
+2025-04-15 11:26:19.559412: 
+epoch:  106 
+2025-04-15 11:40:48.426780: train loss : 0.0142 
+2025-04-15 11:40:59.748134: validation loss: 0.1292 
+2025-04-15 11:41:03.904564: lr: 0.00502 
+2025-04-15 11:41:04.031188: This epoch took 884.469548 s
+ 
+2025-04-15 11:41:04.035722: 
+epoch:  107 
+2025-04-15 11:55:38.494958: train loss : 0.0067 
+2025-04-15 11:55:49.311841: validation loss: 0.0747 
+2025-04-15 11:55:52.547395: lr: 0.004971 
+2025-04-15 11:55:52.563686: This epoch took 888.526965 s
+ 
+2025-04-15 11:55:52.565402: 
+epoch:  108 
+2025-04-15 12:09:44.097132: train loss : 0.0126 
+2025-04-15 12:09:56.839030: validation loss: 0.0884 
+2025-04-15 12:09:59.881463: lr: 0.004923 
+2025-04-15 12:09:59.901011: This epoch took 847.333825 s
+ 
+2025-04-15 12:09:59.902094: 
+epoch:  109 
+2025-04-15 12:24:57.132809: train loss : 0.0050 
+2025-04-15 12:25:10.244041: validation loss: 0.1561 
+2025-04-15 12:25:13.429672: lr: 0.004874 
+2025-04-15 12:25:13.437836: This epoch took 913.534033 s
+ 
+2025-04-15 12:25:13.439100: 
+epoch:  110 
+2025-04-15 12:39:39.019105: train loss : 0.0030 
+2025-04-15 12:39:52.035438: validation loss: 0.1103 
+2025-04-15 12:39:55.279759: lr: 0.004825 
+2025-04-15 12:39:55.291382: This epoch took 881.850195 s
+ 
+2025-04-15 12:39:55.292859: 
+epoch:  111 
+2025-04-15 12:55:04.279752: train loss : 0.0017 
+2025-04-15 12:55:16.277503: validation loss: 0.1764 
+2025-04-15 12:55:20.299566: lr: 0.004776 
+2025-04-15 12:55:20.310701: This epoch took 925.016794 s
+ 
+2025-04-15 12:55:20.311957: 
+epoch:  112 
+2025-04-15 13:17:47.853842: train loss : 0.0057 
+2025-04-15 13:18:01.861377: validation loss: 0.1500 
+2025-04-15 13:18:06.166848: lr: 0.004728 
+2025-04-15 13:18:06.174999: This epoch took 1365.861927 s
+ 
+2025-04-15 13:18:06.176217: 
+epoch:  113 
+2025-04-15 13:33:48.936810: train loss : 0.0082 
+2025-04-15 13:36:40.343405: validation loss: 0.2447 
+2025-04-15 13:36:53.466418: lr: 0.004679 
+2025-04-15 13:36:55.869606: This epoch took 1129.692156 s
+ 
+2025-04-15 13:37:00.434692: 
+epoch:  114 
